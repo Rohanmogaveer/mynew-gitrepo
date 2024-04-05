@@ -1,1 +1,10 @@
-hello good morning
+pipeline {
+   agent any
+   stages{
+      stage ("printing a hello-world") {
+         steps{ 
+            echo "hello-word"
+         }
+      }
+   }
+}
